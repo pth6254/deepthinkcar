@@ -1,0 +1,11 @@
+# 라즈베리파이: picamera2 는 apt 로 설치 (sudo apt install python3-picamera2).
+#   가상환경에서 쓰려면 pyvenv.cfg 의 include-system-site-packages = true 필요.
+numpy
+opencv-python
+pyyaml
+pygame
+adafruit-circuitpython-servokit   # 라즈베리파이 전용 (PC 는 --mock 으로 불필요)
+gpiod                             # 라즈베리파이 전용 (Blinka 의존성)
+ai-edge-litert                    # TFLite 추론
+tensorflow                        # train.py (PC) 에서만 필요
+gpiozero                          # 라즈베리파이 전용 (L9110 모터, lgpio 백엔드)
